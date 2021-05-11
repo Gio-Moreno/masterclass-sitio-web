@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+    <title>Master Class Creación de sitio web con Wordpress</title>
+    <meta name="description" content="Clase gratis para crear un sitio web profesional con wordpress. El sistema de gestión de contenidos más grande del mundo.">
+    <meta name="keywords" content="sitio web, wordpress, gratis, marketing digital, microempresa, crear empresa, personal training, apoyo empresarial, registro, comercio en línea, redes sociales, instagram, facebook, youtube, tik tok, taller de marketing digital, taller gratis">
+    <meta name="author" content="Misión Digital Agencia de Marketing y Negocios Digitales - Giovanny Moreno" />
+    <meta name="dcterms.rightsHolder" content="Giovanny Moreno Marketing Digital" />
+    <meta property="og:title" content="Master Class Sitio Web con Wordpress" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="./assets/imgs/laptop.png" />
+    
+    <link rel="icon" href="./assets/imgs/laptop.png" type="image/png" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- font awesome 5 free -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- Poppins font from Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/app.css">
+
+    
+    
+    <!-- MailerLite Universal -->
+    <script>
+        (function(m, a, i, l, e, r) {
+            m['MailerLiteObject'] = e;
+
+            function f() {
+                var c = {
+                    a: arguments,
+                    q: []
+                };
+                var r = this.push(c);
+                return "number" != typeof r ? r : f.bind(c.q);
+            }
+            f.q = f.q || [];
+            m[e] = m[e] || f.bind(f.q);
+            m[e].q = m[e].q || f.q;
+            r = a.createElement(i);
+            var _ = a.getElementsByTagName(i)[0];
+            r.async = 1;
+            r.src = l + '?v' + (~~(new Date().getTime() / 1000000));
+            _.parentNode.insertBefore(r, _);
+        })(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+        var ml_account = ml('accounts', '2270023', 'n9p2z0h9s6', 'load');
+    </script>
+    <!-- End MailerLite Universal -->
+
+</head>
+
+<body>
+
+    <!--Offer Alert ================================ -->
+     <div class="offer-alert">
+       <div class="offer-alert__container container">
+         <span>🔥😍 Miércoles 19 de mayo de 2021. Hora: 3 pm</span> <a href="#mailer-form" class="offer-alert__btn animated">REGISTRARSE</a>
+       </div>
+     </div>
+    
+  <!--Hero ====================================== -->
+  <header class="hero container-fluid border-bottom">
+    <nav class="hero-nav container px-4 px-lg-0 mx-auto">
+      <ul class="nav w-100 list-unstyled align-items-center p-0">
+        <li class="hero-nav__item">
+          <img class="hero-nav__logo" src="assets/imgs/logo-misiond.svg">
+        </li>
+        <li id="hero-menu" class="flex-grow-1 hero__nav-list hero__nav-list--mobile-menu ft-menu">
+          <ul class="hero__menu-content nav flex-column flex-lg-row ft-menu__slider animated list-unstyled p-2 p-lg-0">
+            <li class="flex-grow-1">
+              <ul class="nav nav--lg-side list-unstyled align-items-center p-0">
+                
+                <li class="hero-nav__item">
+                  <a href="#faq" class="hero-nav__link">Preguntas</a>
+                </li>
+                
+                <li class="hero-nav__item">
+                  <a href="#testimonials" class="hero-nav__link">Profesor</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="#features" class="hero-nav__link">Habilidades</a>
+                </li>
+                <li class="hero-nav__item">
+                  <a href="#product" class="hero-nav__link">Qué aprenderé</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+            class="ft-menu__close-btn animated">
+            <svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z"
+                clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </li>
+        <li class="d-lg-none flex-grow-1 d-flex flex-row-reverse hero-nav__item">
+          <button onclick="document.querySelector('#hero-menu').classList.toggle('ft-menu--js-show')"
+            class="text-center px-2">
+            <i class="fas fa-bars"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero__content container mx-auto">
+      <div class="row px-0 mx-0 align-items-center">
+        <div class="col-lg-6 px-0">
+          <h1 class="hero__title mb-3">
+            CREA TU PROPIO <span class="highlight">SITIO WEB</span> CON WORDPRESS
+          </h1>
+          <p class="hero__paragraph mb-5">
+            En esta clase te mostraré lo sencillo que es aprender a desarrollar una página web desde cero de forma estratégica. 
+          </p>
+          <div class="hero__btns-container">          
+            
+              <a class="hero__btn btn btn-secondary animated mx-lg-3" href="#product">
+                Qué aprenderás en esta clase
+              </a>
+            
+          </div>
+          <p class="hero__paragraph mt-5">
+            A lo largo de este curso virtual aprenderás cómo hacer una página web en Wordpress paso a paso, desde qué se necesita para desarrollar una página web hasta cómo instalar un plugin. Así, entenderás por qué Wordpress ha logrado posicionarse como una de las mejores alternativas para diseño web.
+          </p>
+        </div>
+        <div  class="col-lg-5 mt-5 mt-lg-0 mx-0">
+          <div id="mailer-form" class="hero__img-container hero__img w-100">
+            <div class="ml-form-embed "
+              data-account="2270023:n9p2z0h9s6"
+              data-form="3062510:d7i1p6">
+            </div>            
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================== -->
+
+  <div id="product" class="block-5 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+        <p class="block__pre-title mb-2">¿QUÉ APRENDERÁS?</p>
+        <h1 class="block__title mb-3">Qué aprenderás en esta clase de <span class="highlight">Sitio Web</span> con Wordpress</h1>
+        <p class="block__paragraph mb-0">
+          ¿Qué aprenderás en este curso de WordPress a paso a paso?
+        </p>
+      </div>
+      <div class="row align-items-center flex-column-reverse flex-lg-row px-2">
+        <!-- LEFT CONTENT -->
+        <div class="col-lg-4">
+          <div class="card-2 d-flex flex-row flex-lg-row-reverse">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <i class="fas fa-heartbeat"></i>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-2">Plantillas Web</h3>
+              <p class="card-2__paragraph">
+                El diseño de tu sitio es vital para comunicar tu mensaje.
+                Las plantillas de wordpress lo hacen por nosotros.
+              </p>
+            </div>
+          </div>
+          <div class="card-2 d-flex flex-row flex-lg-row-reverse">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <i class="fas fa-briefcase-medical"></i>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-2">Complementos y funciones</h3>
+              <p class="card-2__paragraph">
+                Podrás añadir funciones especiales a tu sitio web. 
+                Formularios de contacto, cotizaciones, compras, etc.
+              </p>
+            </div>
+          </div>
+          <div class="card-2 d-flex flex-row flex-lg-row-reverse">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <i class="fas fa-bell"></i>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-2">Chat en línea</h3>
+              <p class="card-2__paragraph">
+                Incluye botones de Chat en lína para Whatsapp, Messenger y
+                otras plataformas.
+              </p>
+            </div>
+          </div>
+
+          
+        </div>
+        <!-- IMAGE -->
+        <div class="col-lg-4 my-5 text-center">
+          <img src="assets/imgs/wordpress.png" class="w-75">
+        </div>
+        <!-- RIGHT CONTENT -->
+        <div class="col-lg-4">
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <i class="fas fa-map-marker-alt"></i>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-2">Qué es Wordpress</h3>
+              <p class="card-2__paragraph">
+                Conocerás qué es y cómo utilizar la plataforma de Gestión
+                de Contenidos más grande del mundo. 
+              </p>
+            </div>
+          </div>
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <i class="fas fa-fingerprint"></i>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-2">Crear sin programar</h3>
+              <p class="card-2__paragraph">
+                No necesitas ser programador y entender líneas de código
+                para crear tu sitio web propio.
+              </p>
+            </div>
+          </div>
+          <div class="card-2 d-flex">
+            <div>
+              <span class="card-2__symbol mx-auto">
+                <i class="fas fa-mobile"></i>
+              </span>
+            </div>
+            <div class="px-2"></div>
+            <div>
+              <h3 class="card-2__title mb-2">Hosting y Dominio Web</h3>
+              <p class="card-2__paragraph">
+                Son las herramientas esenciales para poner en línea tu sitio web.
+                Aprenderás dónde encontrarlas y cómo usarlas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================== -->
+
+  <div id="features" class="block-11 space-between-blocks">
+    <div class="container">
+
+      <!-- IMAGE -->
+      
+      <!-- HEADER -->
+      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center">
+        <p class="block__pre-title mb-2">MÁS DETALLES</p>
+        <div class="col-lg-12 my-5 text-center">
+          <img src="assets/imgs/laptop.png" class="w-100">
+        </div>
+        
+        <h1 class="block__title mb-3">Qué <span class="highlight">habilidades</span> tendrás al terminar esta clase?</h1>
+        <p class="block__paragraph mb-0">
+          En esta Master Class nos esforzaremos al máximo para mostrarte el proceso completo de creación de un sitio web.
+          Al finalizar tendrás toda la información necesaria comenzar a posicionar tu marca en internet.
+        </p>
+      </div>
+      <div class="row align-items-center justify-content-center flex-column-reverse flex-lg-row px-2">
+        
+        <div class="col-lg-8 col-xl-6">
+          <div class="row">
+            <div class="col-md-6 mb-2-1rem">
+              <div class="card-1 card-1--selected text-center">
+                <span class="card-1__symbol mx-auto mb-4">
+                  <i class="fas fa-camera-retro"></i>
+                </span>
+                <h3 class="card-1__title mb-2">Gestión de Wordpress</h3>
+                <p class="card-1__paragraph">
+                  vas a implementar secciones que conformarán la
+                  estructura de tu web y cómo optimizar una
+                  página cuando ya ha sido lanzada..
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-2-1rem">
+              <div class="card-1 text-center">
+                <span class="card-1__symbol mx-auto mb-4">
+                  <i class="fas fa-leaf"></i>
+                </span>
+                <h3 class="card-1__title mb-2">Maquetación Web</h3>
+                <p class="card-1__paragraph">
+                  Serás capaz de seleccionar uno de los muchos
+                  temas para Wordpress que existen, para luego
+                  instalarlo y realizar la maquetación de
+                  sitios web ordenados y claros.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-2-1rem">
+              <div class="card-1 text-center">
+                <span class="card-1__symbol mx-auto mb-4">
+                  <i class="fas fa-cog"></i>
+                </span>
+                <h3 class="card-1__title mb-2">Gestión de contenidos</h3>
+                <p class="card-1__paragraph">
+                  Serás capaz de crear, editar y publicar tu contenido
+                  en diferentes páginas, módulos y artículos dentro
+                  de tu sitio web.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 mb-2-1rem">
+              <div class="card-1 text-center">
+                <span class="card-1__symbol mx-auto mb-4">
+                  <i class="fas fa-database"></i>
+                </span>
+                <h3 class="card-1__title mb-2">Promoción de contenidos</h3>
+                <p class="card-1__paragraph">
+                  Podrás compartir y promocionar tus
+                  contenidos a través de tus redes sociales,
+                  correo electrónico, Whatsapp, etc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================== -->
+
+  <div id="testimonials" class="block-20 space-between-blocks">
+    <div class="container">
+      <div class="block__header col-lg-8 col-xl-7 mx-auto text-center px-0">
+        <h1 class="block__title mb-3">¿Quién será tu profesor?</h1>
+        <p class="block__paragraph">
+          Ponemos a tu disposición nuestra experiencia creando sitios web para empresas, emprendedores y marcas
+          durante más de 3 años.
+        </p>
+      </div>
+      <div class="row px-2 pt-4">
+        <div class="col-lg-12">
+          <div class="testimonial-card-1 mb-5">
+            <p class="testimonial-card-1__paragraph mb-3">
+              Soy un emprendedor apasionado por el entorno digital. Soy testigo de la infinidad de opciones que tienen
+              los negocios para crecer con la ayuda de internet y quiero compartir es conocimiento y experiencia con todos los que sea posible.<br><br>
+
+              Fundador de Misión Digital, una agencia de Marketing y negocios Digitales que busca ayudar a todos los negocios a
+              digitallizar sus procesos y en especial posicionar su marca en Internet.
+            </p>
+            <div class="block-20__person">
+              <div class="mb-2">
+                <img class="block-20__person-avatar" src="assets/imgs/fgiovannymoreno.jpg">
+              </div>
+              <div class="flex-grow-1 d-flex flex-column">
+                <span class="block-20__person-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="block-20__person-name my-1">Giovanny Moreno</span>
+                <span class="block-20__person-info"><a href="https://misiond.com">misiond.com</a></span>
+              </div>
+            </div>
+            <span class="testimonial-card-1__quote-symbol">
+              <i class="fas fa-quote-left"></i>
+            </span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <!-- =================================== -->
+
+  <div id="faq" class="block-39 space-between-blocks">
+    <div class="container">
+      <!-- HEADER -->
+      <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+        <h1 class="block__title">Preguntas frecuentes</h1>
+      </div>
+      <div class="row px-2">
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Qué necesito saber para ver esta clase?
+            </h4>
+            <p class="content-block__paragraph">
+              Debes contar con manejo intermedio de computador y herramientas de internet.
+              Tendrás que abrir cuentas en algunas plataformas, por lo que debes tener un
+              correo electrónico válido.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Cuanto tiempo durará la clase?
+            </h4>
+            <p class="content-block__paragraph">
+              La clase está planteada para durar 2 horas.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Es realmente GRATIS esta clase?
+            </h4>
+            <p class="content-block__paragraph">
+              Es TOTALMENTE GRATIS. Nuestro propósito es que te atrevas a crear tu marca en internet.
+              Sin condiciones ni excusas.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="content-block">
+            <h4 class="content-block__title">
+              Crear un sitio web en verdad en GRATIS?
+            </h4>
+            <p class="content-block__paragraph">
+              Tenemos a la mano miles de herramientas. En esta clase veremos algunas de ellas. Muchas
+              de estas herramientas son gratuitas con posibilidades limitadas. Al final es recomendable invertir
+              en herramientas más completas, pero todos podemos comenzar GRATIS.
+            
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- =================================== -->
+
+    <div class="block-32 ">
+      <div class="container">
+        <!-- HEADER -->
+        <div class="col-lg-8 col-xl-7 mx-auto text-center mb-5">
+          <h1 class="block__title mb-3">Nos vemos el 19 de Mayo a las 3pm</h1>        
+      </div>
+    </div>
+
+  <!-- =================================== -->
+
+  <div id="contact-us" class=" mb-1">
+    <div class="offer-alert2">
+      <div class="offer-alert__container container">
+        <span style="color: #ffffff;">🔥😍 Miércoles 19 de mayo de 2021. Hora: 3 pm</span> <a class="offer-alert__btn" href="javascript:;" onclick="ml_account('webforms', '3062510', 'd7i1p6', 'show')">
+          REGISTRARSE AHORA
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- =================================== -->
+
+  <div class="block-44 py-5">
+    
+    
+    <div class="container">
+      <div class="row flex-column flex-md-row px-2 justify-content-center">
+        <div class="flex-grow-1">
+          <ul class="block-44__extra-links d-flex list-unstyled p-0">
+            
+            <li class="mx-2">
+              <a href="https://www.instagram.com/fgiomoreno/" target="_blank" class="block-44__link m-0">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="mx-2">
+              <a href="https://www.facebook.com/agenciamisiondigital" target="_blank" class="block-44__link m-0">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="block-41__copyrights">&copy; 2021 Misión Digital. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =================================== -->
+
+  <script src="assets/app.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+    <script src="//code.tidio.co/46aoebdii5nmxzwz2shruameupqepiqj.js" async></script>
+
+</body>
+
+</html>
